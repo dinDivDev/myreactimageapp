@@ -1,11 +1,24 @@
 import React from "react";
 import "./image.style.css";
 
-const rotate = document.getElementById("reactPic");
+const rotatePic = document.getElementById("reactPic");
 
 const clickOnPicture = () => {
-  rotate.toggleClass("img_container");
+  return rotatePic.rotate();
 };
+
+// const FilterGroup = () => {
+//   const [rotate, setRotate] = useState(false);
+
+//   const handleRotate = () => setRotate(!rotate);
+
+//   return (
+//     <ExpandMoreIcon
+//       className={"filters__chevron " + rotate ? "rotate" : null}
+//       onClick={handleRotate}
+//     />
+//   );
+// };
 
 const ImageComponent = (props) => {
   return (
